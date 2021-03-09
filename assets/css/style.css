@@ -1,0 +1,49 @@
+:root {
+  --Perfume: #d2c9fc;
+  --DaisyBush: #5226aa;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  padding: 1.5rem;
+  background-color: var(--DaisyBush);
+  color: var(--Perfume);
+  margin-bottom: 1rem;
+}
+
+footer {
+  background-color: var(--DaisyBush);
+  color: var(--Perfume);
+  position: relative;
+  text-align: center;
+}
+
+nav ul li {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Perfume);
+}
+
+h2 {
+  color: var(--DaisyBush);
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.justify-centre {
+  justify-content: center;
+}
+
+.justify-right {
+  justify-content: right;
+}
