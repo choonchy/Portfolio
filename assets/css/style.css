@@ -10,6 +10,9 @@ body {
 }
 
 header {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
   background-color: var(--DaisyBush);
   margin-bottom: 1rem;
   padding: 2rem;
@@ -56,6 +59,14 @@ h3 {
   padding: 1rem;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10rem;
+}
+
 footer {
   background-color: var(--DaisyBush);
   color: var(--Perfume);
@@ -85,7 +96,6 @@ footer p {
 }
 
 .about {
-  display: flexbox;
   position: relative;
   left: 25vw;
   width: 50vw;
@@ -153,6 +163,41 @@ footer p {
 }
 
 @media screen and (max-width: 962px) {
+  /* .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  .navbar #myLinks {
+    display: none;
+  }
+
+  .navbar a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .navbar a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .active {
+    background-color: #4caf50;
+    color: white;
+  } */
   header nav {
     transition: display 0.5s;
     display: none;
