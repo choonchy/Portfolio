@@ -12,20 +12,36 @@
 <body>
     <header>
         <h1 class="name">Tom Chappell</h1>
-        <nav>
+        <nav id="navlinks">
             <ul>
-                <li><a href="#About">About<a></li>
-                <li><a href="#Portfolio">Portfolio<a></li>
-                <li><a href="https://github.com/choonchy/" target="blank">Github<a></li>
-                <li><a href="#Contact">Contact<a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="https://github.com/choonchy/" target="blank">Github</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </header>
+
     <main>
-        <h2>About</h2>
-        <h2>Portfolio</h2>
-        <h2>Contact</h2>
+        <section class="about">
+            <h2>About</h2>
+            <p>My name is Tom. I am a full-stack web developer.</p>
+        </section>
+        <section class="portfolio">
+            <h2>Portfolio</h2>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+                <h3>Email</h3>
+                <h3>Phone</h3>
+                <h3>LinkedIn</h3>
+                <h3>Twitter</h3>
+        </section>
     </main>
+
     <footer class="justify-centre">
         <p>&copy; 2021 Tom Chappell<p>
     </footer>
