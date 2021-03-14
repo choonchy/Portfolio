@@ -1,3 +1,5 @@
+/* Document setup */
+
 :root {
   --Perfume: #d2c9fc;
   --Azalea: #f5b9d4;
@@ -7,7 +9,10 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
 }
+
+/* Header and navbar styling */
 
 header {
   position: fixed;
@@ -32,7 +37,7 @@ header nav li {
   display: inline-block;
 }
 
-a {
+header a {
   text-decoration: none;
   display: inline-block;
   color: var(--Perfume);
@@ -44,9 +49,21 @@ a {
   transition: background-color 0.5s, color 0.5s;
 }
 
-a:hover {
+header a:hover {
   background-color: var(--Perfume);
   color: var(--DaisyBush);
+}
+
+/* Main document section styling */
+
+main {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 h2 {
@@ -59,13 +76,31 @@ h3 {
   padding: 1rem;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  margin-top: 10rem;
+main h2 {
+  left: -10rem;
+  display: block;
+  padding: 1rem;
 }
+
+main p {
+  display: block;
+}
+
+main a {
+  text-decoration: none;
+  display: inline-block;
+  color: var(--DaisyBush);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+main a:hover {
+  background-color: var(--DaisyBushDark);
+  color: var(--Perfume);
+}
+
+/* Footer styling */
 
 footer {
   background-color: var(--DaisyBush);
@@ -83,6 +118,8 @@ footer p {
   text-decoration: underline;
 }
 
+/* Classes */
+
 .name {
   font-size: 2rem;
 }
@@ -92,42 +129,22 @@ footer p {
 }
 
 .info-card {
-  background-color: #f5b9d4;
-}
-
-.about {
+  justify-content: center;
+  background-color: var(--Perfume);
   position: relative;
   left: 25vw;
   width: 50vw;
   padding: 1.5rem;
   margin-bottom: 1rem;
-  border-left: 5px solid var(--DaisyBush);
-}
-
-.about h2 {
-  display: inline-flex;
-  padding: 1rem;
-  margin-left: -10rem;
-  margin-right: 10rem;
+  border-left: 10px solid var(--DaisyBush);
+  border-radius: 10px 0 0 10px;
+  box-shadow: 5px 5px var(--DaisyBushDark);
 }
 
 .about p {
   color: var(--DaisyBush);
-  display: inline-flex;
-}
-
-.portfolio {
-  display: flex;
-  position: relative;
-  left: 25vw;
-  width: 50vw;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.portfolio h2 {
+  display: inline;
   padding: 1rem;
-  margin-left: -10rem;
 }
 
 .portfolio p {
@@ -135,83 +152,32 @@ footer p {
   display: inline;
 }
 
-.contact {
-  display: flex;
-  position: relative;
-  left: 25vw;
-  width: 50vw;
-  padding: 1.5rem;
-  margin-bottom: 1rem;
+.portfolio-item {
+  border: 5px var(--DaisyBush);
 }
 
-.contact h2 {
-  padding: 1rem;
-  margin-left: -10rem;
+/* IDs */
+
+#contact {
+  margin-bottom: 5rem;
 }
 
-.contact p {
+#contact h3 {
+  display: block;
+}
+
+#contact p {
   color: var(--DaisyBush);
   display: inline-flex;
+  margin-left: 3rem;
 }
 
-.justify-centre {
-  justify-content: center;
+#simple-site {
+  width: 100%;
+  filter: grayscale(100%);
 }
 
-.justify-right {
-  justify-content: right;
-}
-
-@media screen and (max-width: 962px) {
-  /* .navbar {
-    overflow: hidden;
-    background-color: #333;
-    position: relative;
-  }
-
-  .navbar #myLinks {
-    display: none;
-  }
-
-  .navbar a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
-
-  .navbar a.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .navbar a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .active {
-    background-color: #4caf50;
-    color: white;
-  } */
-  header nav {
-    transition: display 0.5s;
-    display: none;
-  }
-  .icon {
-    display: block;
-    float: right;
-    margin-top: 0rem;
-  }
-  .navlinks a {
-    color: white;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-  }
+#simple-site:hover {
+  transition: filter 0.5s;
+  filter: none;
 }

@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/Javascript/script.js"></script>
     <title>Tom Chappell - Portfolio</title>
 </head>
 
 <body>
-    <header>
+    <header class="navbar">
         <h1 class="name">Tom Chappell</h1>
         <nav id="navlinks">
             <ul>
@@ -20,29 +21,36 @@
                 <li><a href="#Contact">Contact</a></li>
             </ul>
         </nav>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <a href="javascript:void(0);" class="icon" onclick="hamburger()">
             <i class="fa fa-bars"></i>
         </a>
     </header>
 
     <main>
-        <section class="about">
+        <section class="info-card about">
             <h2>About</h2>
-            <p>My name is Tom. I am a full-stack web developer.</p>
+            <p>My name is Tom. I am a full-stack web developer with experience in HTML, CSS, and Javascript.</p>
         </section>
-        <section class="portfolio">
+        <section class="info-card portfolio">
             <h2>Portfolio</h2>
+            <figure class="portfolio-item">
+                <img id="simple-site" src="assets/images/simple-site.png" alt="A simple website landing page">
+                <p><a href="https://choonchy.github.io/Week-1-Mini-Project/" target="blank">Simple website landing page</a></p>
+            </figure>
+            
         </section>
-        <section class="contact">
+        <section class="info-card" id="contact">
             <h2>Contact</h2>
                 <h3>Email</h3>
+                <p>thomas.chappell@outlook.com</p>
                 <h3>Phone</h3>
-                <h3>LinkedIn</h3>
-                <h3>Twitter</h3>
+                <p>0437 840 909</p>
+                <h3><a href="https://www.linkedin.com/in/tom-chappell-05a539140/" target="blank">LinkedIn</a></h3>
+                <h3><a href="https://twitter.com/Choonchy_OCE" target="blank">Twitter</a></h3>
         </section>
     </main>
 
-    <footer class="justify-centre">
+    <footer>
         <p>&copy; 2021 Tom Chappell<p>
     </footer>
 </body>
