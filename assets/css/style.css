@@ -76,6 +76,10 @@ h3 {
   padding: 1rem;
 }
 
+main {
+  padding-bottom: 3rem;
+}
+
 main h2 {
   left: -10rem;
   display: block;
@@ -156,6 +160,16 @@ footer p {
   border: 5px var(--DaisyBush);
 }
 
+.portfolio-item-image {
+  width: 100%;
+  filter: grayscale(100%);
+}
+
+.portfolio-item-image:hover {
+  transition: filter 0.5s;
+  filter: none;
+}
+
 /* IDs */
 
 #contact {
@@ -170,14 +184,4 @@ footer p {
   color: var(--DaisyBush);
   display: inline-flex;
   margin-left: 3rem;
-}
-
-#simple-site {
-  width: 100%;
-  filter: grayscale(100%);
-}
-
-#simple-site:hover {
-  transition: filter 0.5s;
-  filter: none;
 }
